@@ -58,6 +58,4 @@ Start-Process msiexec.exe -Wait -ArgumentList "/i $targetPath /quiet RUNMANAGERO
 & "$octoServer" admin --instance "OctopusServer" --username "admin" --email "$AdminEmail" --password "$AdminPassword"
 & "$octoServer" license --instance "OctopusServer" --licenseBase64 $LicBase64
 
-#"PExpY2Vuc2UgU2lnbmF0dXJlPSJUckhpU1ExWm5QWVE5emJQRk1RaFFyVFhiQnFTbmpoYldYTTVab1dFSmlvdnljalc3Y3lrWmNlcmU4YUFBSGJCc282bHo0MFNXcDNKRCtlb1JNR0dSUT09Ij4NCiAgPExpY2Vuc2VkVG8+c2VsZjwvTGljZW5zZWRUbz4NCiAgPExpY2Vuc2VLZXk+NjM5NjUtNTkxNTctMzE0MjAtMzE2Mjc8L0xpY2Vuc2VLZXk+DQogIDxWZXJzaW9uPjIuMDwhLS0gTGljZW5zZSBTY2hlbWEgVmVyc2lvbiAtLT48L1ZlcnNpb24+DQogIDxWYWxpZEZyb20+MjAxNy0wOS0xMzwvVmFsaWRGcm9tPg0KICA8VmFsaWRUbz4yMDE3LTEwLTI4PC9WYWxpZFRvPg0KICA8UHJvamVjdExpbWl0PlVubGltaXRlZDwvUHJvamVjdExpbWl0Pg0KICA8TWFjaGluZUxpbWl0PlVubGltaXRlZDwvTWFjaGluZUxpbWl0Pg0KICA8VXNlckxpbWl0PlVubGltaXRlZDwvVXNlckxpbWl0Pg0KPC9MaWNlbnNlPg0K"
-
 & "$octoServer" service --instance "OctopusServer" --install --reconfigure --start --dependOn 'MSSQL$SQLEXPRESS'
