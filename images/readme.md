@@ -1,0 +1,1 @@
+Common location for images.
